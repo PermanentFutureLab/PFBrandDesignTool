@@ -3,14 +3,17 @@ html
   head
     title PFLab Design Tool
     link(rel="stylesheet" href="/main.css")
+    // See http://materializecss.com
+    link(rel='stylesheet', href='lib/materialize/css/materialize.min.css')    
     
     script.
       // Main Namepsace
-      window.PF={};
+      window.PF={};        
       
+  body
+    != yield
+    
     script(src="lib/jquery-2.2.3.min.js")    
-    // See http://materializecss.com
-    link(rel='stylesheet', href='lib/materialize/css/materialize.min.css')
     script(src='lib/materialize/js/materialize.min.js')
     
     script(src="lib/fabric.js")
@@ -18,6 +21,3 @@ html
     // Editor functions
     script(src="js/editor/main.js")    
     script(src="js/editor/text.js")
-      
-  body
-    != yield
