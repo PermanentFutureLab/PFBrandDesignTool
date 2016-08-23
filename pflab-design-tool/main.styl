@@ -1,19 +1,45 @@
-body{
-  font-family: "Helvetica";
-  text-align: center;
-  padding: 50px 20px 0;
-  background: #f4f4f7;
-  color: #444;
-  margin: 0;
-}
+$toolbarHeight = 50px
 
-h1{
-  font-size: 65px;
-  line-height: 1.2em;
-  border-bottom: #CCC solid 1px;
-  padding: 20px 0;
-}
+.editor
+  canvas.sex
+    position fixed
+    top: $toolbarHeight
 
-h3{
-  font-weight: 300;
+.export-overlay
+	position: fixed
+	left 50px
+	display: none
+	right 50px
+	bottom 50px
+	top 50px
+	background: #fff
+	z-index 5
+
+	.content
+		width 100%
+		height 200px
+
+.toolbar
+	position fixed
+	left 0
+	right 0
+	height $toolbarHeight
+	top 0
+	background #E5E5E5
+
+	.button
+		height 50px
+		line-height: 50px
+		padding-left 15px
+		cursor pointer
+		float left
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
 }

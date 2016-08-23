@@ -1,6 +1,19 @@
 doctype
 html
   head
+    title PFLab Design Tool
     link(rel="stylesheet" href="/main.css")
+    
+    script.
+      // Main Namepsace
+      window.PF={};
+    
+    script(src="lib/fabric.js")
+    script(src="lib/jquery-2.2.3.min.js")    
+    
+    // Editor functions
+    script(src="js/editor/main.js")    
+    script(src="js/editor/text.js")
+      
   body
     != yield
