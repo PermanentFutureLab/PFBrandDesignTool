@@ -6,6 +6,7 @@ $(function() {
         fill: 'black'
     }));
     PF.editor.canvas.renderAll();
-
   });
+
+  $('.add-text.modal-trigger').leanModal();
 });
