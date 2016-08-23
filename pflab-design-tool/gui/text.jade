@@ -1,7 +1,23 @@
 // Modal Structure
 #add_text.modal
   .modal-content
-    h4 Modal Header
-    p A bunch of text
+    h4 Add Text
+    .row
+      form.col.s12
+        .row
+          .input-field.col.s12
+            input#text_content.validate(placeholder='Text', type='text')
+            label(for='text_content') Text Contents
+            
+        .row          
+          .input-field.col.s9
+            input#fontname.validate(placeholder='Font Name', type='text')
+            label(for='#fontname') Font Name
+            
+          .input-field.col.s3
+            input#fontsize.validate(placeholder='Font Size', type='number')
+            label(for='#fontsize') Font Size
+          
+
   .modal-footer
-    a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!') Agree
+    a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!') Ok
