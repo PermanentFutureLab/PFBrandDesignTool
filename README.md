@@ -8,3 +8,6 @@ To kickstart your development easily we use the Harp-server to serve those files
 - If you have installed Node, just run `sudo npm install -g harp`
 - Clone this repo
 - cd to the repo's folder and run `harp server pflab-design-tool`
+
+#Helpful Links
+- Convert HTML to Jade: http://www.html2jade.org/
