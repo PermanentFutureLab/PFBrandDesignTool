@@ -5,9 +5,13 @@
     .row
       form.col.s12
         .row
-          .input-field.col.s12
-            input#image_size.validate(placeholder='0', type='number')
-            label(for='image_size') Image Size
+          .input-field.col.s6
+            input#image_width.validate(placeholder='0', type='number')
+            label(for='image_width') Image Width
+            
+          .input-field.col.s6
+            input#image_height.validate(placeholder='0', type='number')
+            label(for='image_height') Image Height
           
 
   .modal-footer
