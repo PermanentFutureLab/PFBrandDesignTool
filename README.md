@@ -11,3 +11,9 @@ To kickstart your development easily we use the Harp-server to serve those files
 
 #Helpful Links
 - Convert HTML to Jade: http://www.html2jade.org/
+
+#Contact & Contributers
+
+- Peter Willemsen <peter@codebuffet.co>
+ - Starter of pflab-design-tool
+ - Feel free to contact me if you need help getting started!
