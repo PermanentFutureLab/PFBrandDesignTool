@@ -5,6 +5,7 @@
 
 .toolbar.noselect
   .button.save Save
+  a.button.new-image.modal-trigger(href="#new_image") New Image
   a.button.add-text.modal-trigger(href="#add_text") Add Text
   a.button.set-image-size.modal-trigger(href="#set_image_size") Set Image Size
   a.button.rotate-canvas.modal-trigger(href="#rotate_canvas") Rotate Canvas
@@ -14,3 +15,4 @@
 
 != partial("gui/text")
 != partial("gui/image_size")
+!= partial("gui/new_image")
