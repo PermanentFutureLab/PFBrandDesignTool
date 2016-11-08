@@ -6,8 +6,8 @@
       form.col.s12
         .row
           .input-field.col.s12
-            input#text_content.validate(placeholder='Text', type='text')
-            label(for='text_content') Text Contents          
+            textarea.materialize-textarea#text_content.validate(placeholder='Text', type='text')
+            label(for='text_content') Text Contents
 
   .modal-footer
     a.modal-action.modal-close.waves-effect.waves-green.btn-flat.ok(href='#!') Ok
