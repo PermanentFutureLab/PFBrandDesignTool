@@ -7,6 +7,7 @@ PF.editor.newImage = function(width, height) {
 
   fabric.loadSVGFromURL('images/pflab-1.svg', function(objects, options) {
     var obj = fabric.util.groupSVGElements(objects, options);
+    PF.editor.dragProtectedObject = obj;
     canvas.add(obj).renderAll();
   });
 }
